@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/src/ftpServer/Command.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/CommandFactory.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/ControllerThread.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/CwdCommand.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/DirCommand.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/FTPServerFrame.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/FtpServer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/PassCommand.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/PortCommand.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/QuitCommand.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/RetrCommand.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/Share.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/StoreCommand.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/UserCommand.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/edit.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/userCtrl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ftpServer/userInfoBean.java" charset="GBK" />
+  </component>
+</project>

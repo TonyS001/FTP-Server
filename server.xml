@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="gbk"?>
+<server>
+  <rootDir>C://</rootDir>
+  <users>
+    <user>
+      <username>qq</username>
+      <password>s</password>
+    </user>
+  </users>
+</server>
