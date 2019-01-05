@@ -192,4 +192,45 @@ public class userCtrl extends JDialog implements ActionListener {
             e.printStackTrace();
         }
     }
+    
+    /**
+     * 修改根目录的方法
+    **/
+    public void rootDir(String newPath){
+        String path = System.getProperty("user.dir") + "/server.xml";
+        File file = new File(path);
+        SAXBuilder builder = new SAXBuilder();
+        try {
+            Document parse = builder.build(file);
+            Element root = parse.getRootElement();
+            Element rootDir = root.getChild("rootDir");
+            rootDir.setText(newPath);
+            XMLOutputter out = new XMLOutputter();
+            out.setFormat(Format.getPrettyFormat().setEncoding("gbk"));
+            out.output(parse, new FileOutputStream(path));
+        } catch (JDOMException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    /**
+     * 获取根目录路径的方法
+     **/
+    public String getPath(){
+        String path = System.getProperty("user.dir") + "/server.xml";
+        File file = new File(path);
+        SAXBuilder builder = new SAXBuilder();
+        try {
+            Document parse = builder.build(file);
+            Element root = parse.getRootElement();
+            return root.getChildText("rootDir");
+        } catch (JDOMException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

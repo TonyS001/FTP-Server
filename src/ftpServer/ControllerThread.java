@@ -17,7 +17,9 @@ import java.net.Socket;
 
 public class ControllerThread extends Thread{
     private int count = 0;
-
+    
+    public FTPServerFrame frame = main.server_Frame;
+    
     //客户端socket与服务器端socket组成一个tcp连接
 
     private Socket socket;
@@ -119,7 +121,7 @@ public class ControllerThread extends Thread{
             e.printStackTrace();
         }
         finally {
-            System.out.println("用户断开连接");
+            frame.state.setText("用户断开连接！服务器已关闭");
         }
     }
     

@@ -19,11 +19,11 @@ public class PassCommand implements Command{
             Share.loginedUser.add(key);
             t.setIsLogin(true);
             response = "230 User "+key+" Logged in.";
-            frame.state.setText("用户"+key+"成功登陆！");
+            frame.state.setText("用户"+key+"登陆成功！");
         }
         else {
             response = "530 Wrong Password.";
-            frame.state.setText("用户"+key+"成功失败！请重新打开服务器");
+            frame.state.setText("用户"+key+"登录失败！服务器已关闭");
         }
         try {
             writer.write(response);

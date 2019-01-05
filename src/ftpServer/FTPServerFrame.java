@@ -46,7 +46,7 @@ public class FTPServerFrame extends javax.swing.JFrame{
         getContentPane().setLayout(new java.awt.GridBagLayout());
         jPanel1.setLayout(new java.awt.GridLayout(0, 1));
 
-        addUsers.setText("添加用户组");
+        addUsers.setText("管理用户组");
         addUsers.setFont(new Font(null,Font.BOLD,20));
         addUsers.setFocusable(false);
         addUsers.setPreferredSize(new Dimension(200,80));
@@ -74,7 +74,7 @@ public class FTPServerFrame extends javax.swing.JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null,
-                        "端口监听中");
+                        "端口21监听中");
                 FtpServer ftpServer = null;
                 try {
                     ftpServer = new FtpServer(21);
@@ -90,6 +90,7 @@ public class FTPServerFrame extends javax.swing.JFrame{
         state.setEditable(false);
         state.setFont(new Font(null,Font.BOLD,20));
         state.setPreferredSize(new Dimension(360,80));
+        state.setText("欢迎使用FTP服务器端");
         jPanel1.add(state);
     }
 }
