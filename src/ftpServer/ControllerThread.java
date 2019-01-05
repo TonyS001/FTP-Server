@@ -9,10 +9,9 @@ import java.io.Writer;
 import java.net.Socket;
 
 /**
- * @author onroadrui
  * 用于处理控制连接数据请求的线程
  * 控制连接:在创建之后，直到socket.close()(四次挥手的过程)，
- * 都是tcp里面的establish的阶段。可以自由地传输数据（全双工的）
+ * 都是tcp里面的establish的阶段。可以自由地传输数据
  * */
 
 public class ControllerThread extends Thread{

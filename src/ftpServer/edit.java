@@ -107,9 +107,9 @@ public class edit extends JDialog implements ActionListener {
                 userInfoBean bean = new userInfoBean(username,password);
                 // 如果对话框的siteBean不为空
                 if (infoBean != null)
-                    dialog.delSite(infoBean); // 调用父窗体的delSite方法删除原有站点
-                dialog.addSite(bean); // 调用父窗体的addSite方法添加站点
-                dialog.loadSiteList(); // 调用父窗体的loadSiteList方法重载站点列表
+                    dialog.delSite(infoBean); // 调用父窗体的delSite方法删除原有用户信息
+                dialog.addSite(bean); // 调用父窗体的addSite方法添加用户
+                dialog.loadSiteList(); // 调用父窗体的loadSiteList方法重载用户列表
                 dispose();
             } catch (NullPointerException ex) {
                 ex.printStackTrace();

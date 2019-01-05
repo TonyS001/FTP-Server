@@ -136,7 +136,7 @@ public class userCtrl extends JDialog implements ActionListener {
     }
 
     /**
-     * 添加站点信息的方法
+     * 添加用户的方法
      */
     public void addSite(userInfoBean bean) {
         String path = System.getProperty("user.dir") + "/server.xml";
@@ -167,7 +167,7 @@ public class userCtrl extends JDialog implements ActionListener {
     }
 
     /**
-     * 删除FTP站点的方法
+     * 删除用户的方法
      */
     public void delSite(userInfoBean bean) {
         siteInfo.remove(bean.getUserName());
