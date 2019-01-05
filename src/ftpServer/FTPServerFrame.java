@@ -65,6 +65,20 @@ public class FTPServerFrame extends javax.swing.JFrame{
         java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
         setBounds((screenSize.width - 800) / 2, (screenSize.height - 600) / 2, 800, 700);
 
+        JButton alter = new JButton();
+        alter.setText("修改根目录");
+        alter.setFont(new Font(null,Font.BOLD,20));
+        alter.setFocusable(false);
+        alter.setPreferredSize(new Dimension(200,80));
+        alter.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                alter dialog = new alter();
+                dialog.setVisible(true);
+            }
+        });
+        jPanel1.add(alter);
+
         JButton start = new JButton();
         start.setText("打开服务器");
         start.setFont(new Font(null,Font.BOLD,20));
